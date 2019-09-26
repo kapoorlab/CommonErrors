@@ -16,3 +16,7 @@ final double cost = assignmentCosts.get(source);
 graph.setEdgeWeight(edge, cost);
 }
 }
+
+FOR git and Xcode path errors:
+
+sudo xcode-select --switch /Library/Developer/CommandLineTools/
