@@ -20,3 +20,8 @@ graph.setEdgeWeight(edge, cost);
 FOR git and Xcode path errors:
 
 sudo xcode-select --switch /Library/Developer/CommandLineTools/
+
+
+
+Changing file character in terminal can be done by:
+for X in *.TIF; do echo mv $X ${X/*.TIF/*.tif}; done
