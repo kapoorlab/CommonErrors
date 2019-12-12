@@ -24,4 +24,4 @@ sudo xcode-select --switch /Library/Developer/CommandLineTools/
 
 
 Changing file character in terminal can be done by:
-for X in *.TIF; do echo mv $X ${X/*.TIF/*.tif}; done
+for X in *.TIF; do  mv -- "$X" "${X/.TIF/.tif}"; done;
