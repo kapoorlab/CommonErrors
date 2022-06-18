@@ -25,6 +25,6 @@ sudo xcode-select --switch /Library/Developer/CommandLineTools/
 
 Changing file character in terminal can be done by:
 for X in *.TIF; do  mv -- "$X" "${X/.TIF/.tif}"; done;
-
+for filename in ./*; do mv "./$filename" "./$(echo "$filename" | sed -e 's/proj_//g')";  done
 
 Changing directory permissions: sudo chmod -R ugo+wx /media/username/your_drive
